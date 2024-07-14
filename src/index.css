@@ -1,13 +1,73 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.calculator {
+  background: linear-gradient(155.23deg, #28518e 0%, #3a77d1 100%);
+  border-radius: 20px;
+  padding: 20px;
+  max-width: 320px;
+  margin: auto;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+.display {
+  color: #ffffff;
+  padding: 30px 0 20px 0;
+  font-size: 2em;
+  text-align: right;
+  border-bottom: 1px solid #ffffff;
+  margin-bottom: 20px;
+  overflow-x: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.expression {
+  font-size: 16px;
+  color: #b0c4de;
+  margin-bottom: 10px;
+}
+
+.result {
+  font-size: 32px;
+  font-weight: bold;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px 20px;
+}
+
+.buttons button {
+  color: white;
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 1.5em;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  color: white;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.buttons button:nth-child(20) {
+  color: #2b589a;
+  background: rgba(255, 255, 255);
 }
